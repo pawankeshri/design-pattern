@@ -1,0 +1,9 @@
+Let's assume that we ask the user to provide some of his personal and bank details when he applies for a loan.
+Once we receive the details, we might want to validate those. In real life, it might be many more fields and more complex validations.
+But, for our simple example, we will take around 10 fields and will perform simple validations — like whether the fields are empty.
+
+The number of fields for validation may change over time. We may want to add more fields or may want to temporarily avoid validating certain fields.
+Hence, the solution should be flexible enough to adapt to these requirements.
+
+Also, we need two different types of results. The first one is whenever a field is not valid.
+We need to return that field without continuing the validations for other remaining fields. The second one is to validate all the fields and return a list of invalid fields.
